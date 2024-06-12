@@ -1,0 +1,97 @@
+body {     
+    font-family: Arial, sans-serif;
+   background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color:white;
+}
+.reservation {
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form{
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input,select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+ button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.radio-container {
+display: block;
+position: relative;
+padding-left: 35px;
+margin-bottom: 12px;
+cursor: pointer;
+user-select: none;
+}
+
+.radio-container input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+}
+
+.checkmark {
+position: absolute;
+top: 0;
+left: 0;
+height: 25px;
+width: 25px;
+background-color: #eee;
+border-radius: 50%;
+}
+
+.radio-container:hover input ~ .checkmark {
+background-color: #ccc;
+}
+
+.radio-container input:checked ~ .checkmark {
+background-color: #2196F3;
+}
+
+.checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+
+.radio-container input:checked ~ .checkmark:after {
+display: block;
+}
+
+.radio-container .checkmark:after {
+top: 9px;
+left: 9px;
+width: 8px;
+height: 8px;
+border-radius: 50%;
+background: white;
+}

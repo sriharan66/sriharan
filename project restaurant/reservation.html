@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation FORM</title>
+<link rel="stylesheet" type="text/css" href="reservation.css">
+</head>
+<body>
+    <div class="reservation">
+        <h2>Reservation</h2>
+        <form action="/submit-reservation" method="post">
+            <div class="form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                  </div>
+            <div class="form">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form">
+                <label for="date">Reservation Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form">
+                <label for="time">Reservation Time</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form">
+                <label for="people">Number of people's</label>
+                <select id="people" name="people" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </div>
+                <div class="form">
+                    <label for="people">Do you want private table</label>
+                <label class="radio-container">
+                    Yes
+                    <input type="radio" name="option" value="1">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="radio-container">
+                    No
+                    <input type="radio" name="option" value="2">
+                    <span class="checkmark"></span>
+                      </label>
+
+            </div>
+            <div class="form">
+                <button type="submit">Book a Table</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

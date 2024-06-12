@@ -1,0 +1,139 @@
+header ul{
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
+    
+}
+a{
+text-decoration: none;
+}
+dl{
+margin: 0px;
+}
+#contacts{
+    height:50px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+#contacts li{
+  margin-left: 50px;
+  padding-top: 15px;
+}
+body{
+    margin: 0px;
+    background-color: rgba(12, 8, 8, 0.762);
+    color:white;
+}
+#navigation{
+    margin: 0px;
+    height:40px;
+    background-color: rgba(0, 0, 0, 0.187);
+}
+#navigation li{
+    padding-top: 10px;
+}
+@keyframes trans {
+    from{background-color:white;
+            color:blueviolet;
+    }
+    to{background-color:aqua;
+            color:white
+    }
+   
+}
+a{
+    color:aqua;
+}
+#contacts a:hover,#navigation a:hover{
+border: 1px solid black;
+color:white;
+border-radius: 5px;
+padding: 5px;
+    animation-name: trans;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+footer{
+    border:1px solid black;
+    column-count: 2;
+    text-align: center;
+    background-color: darkslategrey;
+    color:white
+}
+footer ul{
+    list-style: none;
+}
+#connect h4{
+   margin: 0px;
+}
+footer li{
+    padding: 5px;
+}
+#connect a{
+    color:rgba(255, 255, 255, 0.434);
+}
+#connect a:hover{
+    border: 1px solid black;
+    color:white;
+    border-radius: 5px;
+    padding: 5px;
+        animation-name: trans;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+    #location img:hover{
+cursor:grab;
+    }
+    #location h4{
+    padding-top: 15px;
+    }
+ul{
+    list-style: none;
+}
+
+ #chef img{
+position: relative;
+left:150px;
+bottom:20px;
+ }
+h4,#contents dt{
+    text-align: center;
+    font-size: x-large;
+    font-style: italic;
+    color:chocolate;
+}
+.cheff{
+    display: flex;
+    justify-content:space-evenly;
+}
+#chef p{
+    width:600px;
+}
+#contents{
+    text-align: center;
+}
+#contents ul{
+width:800px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#menu{
+    border: 1px solid;
+    width: 700vh;
+}
+#contents img{
+    width:50px;
+    height: 50px;
+}
+@keyframes move {
+    0%{transform:translateX(100%);}
+100%{transform: translateX(-100%);}
+}
+#menu ul:hover{
+    animation-play-state: paused;
+}
+    #menu ul{
+        animation: move 20s linear infinite;
+    }
