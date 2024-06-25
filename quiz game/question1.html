@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="questions.css">
+</head>
+<body>
+    <div class="content">
+        <h3>QUIZ QUESTIONS</h3>
+        <span>(1 Out Of 5)</span>
+        <div class="question">
+            <h4><span>Q1.</span>In Which year was the first iphone released?</h4>
+        </div>
+        <form action="result.html" method="post">
+            <div id="radio">
+                <input type="radio" name="iphone" value="2010" id="2010"><label for="2010">2010</label><br><br>
+                <input type="radio" name="iphone" value="2000" id="2000"><label for="2000">2000</label><br><br>
+                <input type="radio" name="iphone" value="2008" id="2008"><label for="2008">2008</label><br><br>
+                <input type="radio" name="iphone" value="2007" id="2007"><label for="2007">2007</label><br>
+            </div>
+            <div id="navigation">
+                <a href="index.html">
+                    <button type="button">PREVIOUS</button><br>
+                </a>
+                <a href="question2.html">
+                    <button type="button" onclick="getdata()">NEXT</button><br>
+                </a>
+                </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

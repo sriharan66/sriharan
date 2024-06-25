@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="questions.css">
+</head>
+<body>
+    <div class="content">
+        <h3>QUIZ QUESTIONS</h3>
+        <span>(5 Out Of 5)</span>
+        <div class="question">
+            <h4><span>Q5.</span>Owls were thought to be in medievel europe?</h4>
+        </div>
+        <form action="result.html" method="post">
+            <div id="radio">
+                <input type="radio" name="owls" value="witch" id="witch"><label for="witch">WITCH</label><br><br>
+                <input type="radio" name="owls" value="ghost" id="ghost"><label for="ghost">GHOST</label><br><br>
+                <input type="radio" name="owls" value="death annoucement" id="death annoucement"><label for="death annoucement">DEATH ANNOUNCEMENT</label><br><br>
+                <input type="radio" name="owls" value="vampire" id="vampire"><label for="vampire">VAMPIRE</label><br>
+             </div>
+            <div id="navigation">
+                <a href="question4.html">
+                    <button type="button">PREVIOUS</button><br>
+                </a>
+                <a href="result.html">
+                    <button type="button" onclick="getdata()">NEXT</button><br>
+                </a>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

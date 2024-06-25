@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="questions.css">
+</head>
+<body>
+    <div class="content">
+        <h3>QUIZ QUESTIONS</h3>
+        <span>(2 Out Of 5)</span>
+        <div class="question">
+        <h4><span>Q2.</span>Where does Halloween come from?</h4>
+        </div>
+        <form action="result.html" method="post">
+            <div id="radio">
+                <input type="radio" name="halloween" value="canada" id="canada"><label for="canada">CANADA</label><br><br>
+                <input type="radio" name="halloween" value="england" id="england"><label for="england">ENGLAND</label><br><br>
+                <input type="radio" name="halloween" value="ireland" id="ireland"><label for="ireland">IRELAND</label><br><br>
+                <input type="radio" name="halloween" value="scotland" id="scotland"><label for="scotland">SCOTLAND</label><br>
+             </div>
+            <div id="navigation">
+                <a href="question1.html">
+                    <button type="button">PREVIOUS</button><br>
+                </a>
+                <a href="question3.html">
+                    <button type="button" onclick="getdata()">NEXT</button><br>
+                </a>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

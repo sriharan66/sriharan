@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="result">
+       <h3>QUIZ RESULTS</h3>
+        <div>
+            <h4>YOUR ANSWERS</h4>
+            <p id="ans1"></p>
+            <p id="ans2"></p>
+            <p id="ans3"></p>
+            <p id="ans4"></p>
+            <p id="ans5"></p>
+            <div id="resulting">
+             <p id="corretanswer1"></p>
+                <p id="corretanswer2"></p>
+             <p id="corretanswer3"></p>
+                <p id="corretanswer4"></p>
+                <p id="corretanswer5"></p>
+             </div>
+        </div>
+        <div id="navigation">
+            <a href="index.html">
+                <button type="button">RESTART GAME</button><br>
+            </a>
+                <button id="quit" type="button" onclick="windowclose()">QUIT GAME</button><br>
+            </div>
+    <script>
+        var chosen1=localStorage.getItem("answer1result");
+        var chosen2=localStorage.getItem("answer2result");
+        var chosen3=localStorage.getItem("answer3result");
+        var chosen4=localStorage.getItem("answer4result");
+        var chosen5=localStorage.getItem("answer5result");
+        document.getElementById('ans1').innerHTML="1. "+chosen1;
+        document.getElementById('ans2').innerHTML="2. "+chosen2;
+        document.getElementById('ans3').innerHTML="3. "+chosen3;
+        document.getElementById('ans4').innerHTML="4. "+chosen4;
+        document.getElementById('ans5').innerHTML="5. "+chosen5;
+       
+         if(2007==chosen1){
+            document.getElementById('corretanswer1').innerHTML="corret";
+            }
+        else{
+             document.getElementById('corretanswer1').innerHTML="wrong";
+             }
+             if('ireland'==chosen2){
+            document.getElementById('corretanswer2').innerHTML="corret";
+            }
+        else{
+             document.getElementById('corretanswer2').innerHTML="wrong";
+             }
+             if(500==chosen3){
+            document.getElementById('corretanswer3').innerHTML="corret";
+            }
+        else{
+             document.getElementById('corretanswer3').innerHTML="wrong";
+             }
+             if('hard candy'==chosen4){
+            document.getElementById('corretanswer4').innerHTML="corret";
+            }
+        else{
+             document.getElementById('corretanswer4').innerHTML="wrong";
+             }
+             if('witch'==chosen5){
+            document.getElementById('corretanswer5').innerHTML="corret";
+            }
+        else{
+             document.getElementById('corretanswer5').innerHTML="wrong";
+             }
+             function windowclose(){
+                window.close();
+             }
+      </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="questions.css">
+</head>
+<body>
+    <div class="content">
+        <h3>QUIZ QUESTIONS</h3>
+        <span>(4 Out Of 5)</span>
+        <div class="question">
+        <h4><span>Q4.</span>Kid's number one choice of Halloween treats is?</h4>
+        </div>
+        <form action="result.html" method="post">
+            <div id="radio">
+                <input type="radio" name="Halloweentreats" value="jelly beans" id="jelly beans"><label for="jelly beans">JELLY BEANS</label><br><br>
+                <input type="radio" name="Halloweentreats" value="candy corn" id="candy corn"><label for="candy corn">CANDY CORN</label><br><br>
+                <input type="radio" name="Halloweentreats" value="chocolate" id="chocolate"><label for="chocolate">CHOCOLATE</label><br><br>
+                <input type="radio" name="Halloweentreats" value="hard candy" id="hard candy"><label for="hard candy">HARD CANDY</label><br>
+             </div>
+            <div id="navigation">
+                <a href="question3.html">
+                    <button type="button">PREVIOUS</button><br>
+                </a>
+                <a href="question5.html">
+                    <button type="button" onclick="getdata()">NEXT</button><br>
+                </a>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

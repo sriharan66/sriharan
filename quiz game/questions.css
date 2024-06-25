@@ -1,0 +1,42 @@
+body{
+    background-color:#7676ff;
+    font-style: oblique;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+.content{
+    padding-top: 80px;
+}
+ #radio label{
+    border:1px solid white;
+    background-color:violet;
+    border-radius: 15px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    padding-left: 120px;
+    padding-right: 120px;
+    }
+ #radio label:hover{
+        background-color: aqua;
+    }
+#navigation{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+#navigation button{
+    border:1px solid darkslategrey;
+    border-radius: 15px;
+    width:100px;
+    height:30px;
+    background-color: yellow;
+    font-style: italic;
+font-weight: bold;
+color:darkslategrey
+}
+#navigation button:hover{
+    background-color: aqua;
+}
+
+    
